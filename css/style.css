@@ -435,7 +435,7 @@ nav {
 
 
 #header {
-	background: linear-gradient(215deg, rgba(137,231,255,0.5) 0%,rgba(236,135,192,0.5) 100%), url('../img/hero-2.jpg') center center; /* Fall back */
+	background: linear-gradient(215deg, rgba(137,231,255,0.5) 0%,rgba(236,135,192,0.5) 100%), url('../img/mobile_hero.jpg') center center; /* Fall back */
 
 	background-size: 100%;
 	height: 600px;
