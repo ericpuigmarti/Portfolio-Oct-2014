@@ -183,71 +183,26 @@
 <!-- END PORTFOLIO SECTION ############################################### -->
 
 
-
-<!-- CLIENTS SECTION ############################################### -->
-
-
-<section id="clients_section" style="display:none;">
-
-	<div class="row">
-		
-				<div class="twelve columns centered scrollme">
-				
-					<!-- Title --> 
-				
-					<h3>Who we work with</h3>
-					
-					<p class="lead">Interdum et malesuada fames ac ante ipsum primis in faucibus. Bacon ipsum dolor sit amet meatball shank pork chop flank.</p>
-								
-					<!-- Content --> 
-
-					<ul class="four_up tiles clients_list animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="-50" data-rotatez="0">
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-									
-					</ul>
-	
-					<ul class="four_up tiles animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="50" data-rotatez="0">
-					
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-						<li class="clients"><img src="http://www.placehold.it/350x125" alt="EXEMPLE"></li>
-									
-					</ul>
-
-				</div>
-
-
-	</div> <!-- End row div -->    
-	
-</section>
-
-<!-- END CLIENTS SECTION ############################################### -->
-
 <!-- ABOUT SECTION ############################################### -->
 
 <section id="about">
 
 	<div class="row">
-		
 				<div class="six columns">
 					<!-- Picture of you -->
 					<img class="picture " src="img/me.jpg" alt="Me">
 					<!-- Social Stuff -->
 					<div class="social centered">
-						<a href="https://www.facebook.com/eric.puigmarti"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.twitter.com/ericpuigmarti"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.instragram.com/ericpuigmarti"><i class="fa fa-instagram"></i></a>
-						<!-- <a href="#"><i class="fa fa-flickr"></i></a> -->
-						<a href="https://www.dribbble.com/ericpuigmarti"><i class="fa fa-dribbble"></i></a>
+						<a href="https://www.facebook.com/eric.puigmarti"><i class="fa fa-facebook" id="fb"></i></a>
+						<a href="https://www.twitter.com/ericpuigmarti"><i class="fa fa-twitter" id="tw"></i></a>
+						<a href="https://www.instragram.com/ericpuigmarti"><i class="fa fa-instagram" id="in"></i></a>
+						<!-- <a href="#"><i class="fa fa-flickr" id="fl"></i></a> -->
+						<a href="https://www.dribbble.com/ericpuigmarti"><i class="fa fa-dribbble" id="dr"></i></a>
 					</div>	
 				</div>
 				
 					<!-- Name --> 
-				<div class="six columns">
+				<div class="six columns" id="bio">
 					<h4>Biography</h4>
 								
 					<!-- Content --> 
@@ -361,11 +316,9 @@
 		    		<input type="email" name="email" placeholder="YOUR EMAIL" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="300" data-rotatez="0">
 
 		    		
-		    		<textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE HERE :)" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="600" data-rotatez="0">
-</textarea>
+		    		<textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE HERE :)" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="600" data-rotatez="0"></textarea>
 		    		
-		    		<button name="send" type="submit" class="submit animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="1200" data-rotatez="0">
-Send</button>
+		    		<button name="send" type="submit" class="submit animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="1200" data-rotatez="0">Send</button>
 		    		
 		    		<!-- Text Promise we do not spam -->
 					    		
@@ -379,54 +332,29 @@ Send</button>
 
 </section>
 
-
 <!-- END SUBSCRIBE SECTION ############################################### -->
 
 
 
 <!-- FOOTER SECTION ############################################### -->
 
-
 <section id="footer">
 		
 		    <div class="row">		   		    	
-		    	
-		    	<div class="three columns">
-		    		
-		    		<p>© 2014 ERIC PUIGMARTI</p>
-		    	
-		    	</div>
-			    
-			    <div class="two columns push_five text-right">
-		    		
-		    		<a href="https://www.facebook.com/eric.puigmarti">fb.com/eric.puigmarti</a>
-		    	
-		    	</div>
-		    	
-		    	<div class="two columns text-right">
-		    		
-		    		<a href="https://twitter.com/ericpuigmarti">@ericpuigmarti</a>
-		    	
-		    	</div>
-
+		    	<div class="three columns"><p>© 2014 ERIC PUIGMARTI</p></div>
+			    <div class="two columns push_five text-right"><a href="https://www.facebook.com/eric.puigmarti">fb.com/eric.puigmarti</a></div>
+		    	<div class="two columns text-right"><a href="https://twitter.com/ericpuigmarti">@ericpuigmarti</a></div>
 		    </div>
 
-		    <div class="logo-footer scrollme animateme"  data-from="0.6" data-to="0" data-opacity="0" data-translatey="100" data-rotatez="0"><a href="#header" class="goto"></a></div>			
+		    <div class="logo-footer scrollme animateme" data-from="0.6" data-to="0" data-opacity="0" data-translatey="100" data-rotatez="0"><a href="#header" class="goto"></a></div>			
 
 </section>
 
-
 <!-- END FOOTER SECTION ############################################### -->
-
-
 
 </div> <!-- end of container -->
 
-
-
 <!-- WORKS CONTENT ############################################### -->
-
-
 
 <!-- WORK 1 CONTAINER -->
 
@@ -494,8 +422,7 @@ Send</button>
 		<h4>Shifthub</h4>
 		
 		<!-- Information -->					
-		<strong>Challenge:</strong> <p>For years, small businesses have struggled to access the right tools to manage their organizations digitally. The three largest pains for most small businesses are scheduling, communication and distributing important company information.</p></br> 
-		<p>Employees continue to feel disconnected to their organization and often need to diligently check their emails or call managers to find out when they're working next.</p> <br>
+		<strong>Challenge:</strong> <p>For years, small businesses have struggled to access the right tools to manage their organizations digitally. The three largest pains for most small businesses are scheduling, communication and distributing important company information. Employees continue to feel disconnected to their organization and often need to diligently check their emails or call managers to find out when they're working next.</p> <br>
 		<p>There is huge demand for small businesses to stay connect with their employees. Shifthub closes the communication gap between managers and employees allowing for easy scheduling, group messaging, and payroll management tools.</p>
 
 		<!-- Button Link if u want -->
