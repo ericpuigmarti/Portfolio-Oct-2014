@@ -1003,6 +1003,7 @@ figure.effect-hover:hover p {
     display: inline-block;
     margin-right: 15px;
     margin-top:30px;
+    margin-bottom: 2em;
     font-size:16px;
     border: 1px solid #DDD;
     border-radius: 50%;
@@ -1042,9 +1043,62 @@ figure.effect-hover:hover p {
 	margin-right: 1em;
 }
 
-#bio {
-	margin-top: 40px;
-}
+/*	HINT- A CSS tooltip library */
+
+	.hint { position: relative; display: inline-block; }
+
+	.hint:before, .hint:after {
+		position: absolute;
+		opacity: 0;
+		z-index: 1000000;
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		pointer-events: none;
+	}
+
+			
+	.hint:hover:before, .hint:hover:after {
+		opacity: 1;
+	}
+
+	.hint:before {
+		content: '';
+		position: absolute;
+		background: transparent;
+		border: 6px solid transparent;
+		position: absolute;
+	}
+			
+	.hint:after {
+		content: attr(data-hint);
+		background: rgba(0, 0, 0, 0.8);
+		color: white;
+		padding: 8px 10px;
+		font-size: 12px;
+		white-space: nowrap;
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	.hint--top:before {
+		bottom: 100%;
+		left: 50%;
+		margin: 0 0 -18px 0;
+		border-top-color: rgba(0, 0, 0, 0.8);
+	}
+			
+	.hint--top:after {
+		bottom: 100%;
+		left: 50%;
+		margin: 0 0 -6px -10px;
+	}
+
+	.hint--top:hover:before {
+		margin-bottom: -10px;
+	}
+
+	.hint--top:hover:after {
+		margin-bottom: 2px;
+	}
 
 /* 09. READING FEED ================================================== */
 
@@ -1179,6 +1233,19 @@ figure.effect-hover:hover p {
 	padding: 60px 0 5px 0;
 }
 
+#contact .lead {
+	/*padding-bottom: 0px !important;*/
+}
+
+#contact-links {
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+}
+
+.links {
+	padding-bottom: 2em;
+}
 
 /* Form */
 
@@ -1281,6 +1348,8 @@ figure.effect-hover:hover p {
 	background: #1e1f20;
 	font-size: 68.5%;
 	font-weight: 800;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 #footer p {
