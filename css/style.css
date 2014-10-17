@@ -377,6 +377,8 @@ nav {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    padding-left: 1em;
+	padding-right: 1em;
 }
 
 
@@ -1013,11 +1015,17 @@ figure.effect-hover:hover p {
     transition: all 0.2s ease-in-out;
 }
 
-#about .fa:hover {
+/*#about .fa:hover {
 	background: #64b7e3;
 	border-color: #64b7e3;
 	color:#FFF;
-}
+}*/
+
+#about #fb:hover {background: #3b5998 !important; border-color: #3b5998 !important;	color:#FFF;}
+#about #tw:hover {background: #00aced !important; border-color: #00aced !important;	color:#FFF;}
+#about #in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
+#about #fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
+#about #dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
 
 #about .lead {
 	font: 24px 'Georgia', sans-serif;
@@ -1031,7 +1039,13 @@ figure.effect-hover:hover p {
 #about .ilove {
 	width: 44px;
 	height: 44px;
+	margin-right: 1em;
 }
+
+#bio {
+	margin-top: 40px;
+}
+
 /* 09. READING FEED ================================================== */
 
 #reading-feed {
@@ -1141,6 +1155,8 @@ figure.effect-hover:hover p {
 	padding-top:120px;
 	padding-bottom: 100px;
 	margin-top:-40px;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 /* Information from the left */
@@ -1455,7 +1471,6 @@ and (orientation : landscape) {
 	    top: 300px;
 	    width: 100%;
 	}
-
 	
 }
 
@@ -1527,6 +1542,11 @@ and (orientation : landscape) {
 	
 	.whatwedo:hover > img {opacity: 1;}
 
+	#method h3 {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 
 /* Works */
 
@@ -1535,7 +1555,7 @@ and (orientation : landscape) {
 	.grid figure img {
 		position: relative;
 		display: block;
-		height: 100%;
+		width: 100%;
 		opacity: 0.7;
 	}
 	
