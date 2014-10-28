@@ -605,8 +605,9 @@ nav {
 .grid figure img {
 	position: relative;
 	display: block;
+	overflow: hidden;
 	width: 100%; /* if you wan to edit the size of each work */
-	height: auto;
+	/*height: auto;*/
 	opacity: 0.7;
 }
 
@@ -1038,7 +1039,8 @@ figure.effect-hover:hover p {
 #about .ilove {
 	width: 44px;
 	height: 44px;
-	margin-right: 1em;
+	margin-right: 3em;
+	float: left;
 }
 
 /*	HINT- A CSS tooltip library */
