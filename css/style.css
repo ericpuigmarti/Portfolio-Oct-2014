@@ -170,7 +170,10 @@ a {
 a:hover {
     color: #64b7e3;
 }  
-	
+
+.dark {
+	color: #ffffff !important;
+}	
 /* Paragrah */
 
 p {
@@ -438,9 +441,9 @@ nav {
 
 #header {
 	background: linear-gradient(215deg, rgba(137,231,255,0.5) 0%,rgba(236,135,192,0.5) 100%), url('../img/mobile_hero.jpg') center center; /* Fall back */
-
+	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 600px;
+	height: 75vh;
     position: relative;
 }
 
@@ -509,7 +512,7 @@ nav {
 
 
 #method {
-    background: #FFF;
+    background: #f2f2f2;
     position: relative;
     padding: 100px 0;
 }
@@ -522,18 +525,33 @@ nav {
 	line-height: 130%;
 }
 
+.learn { border-bottom: 5px solid #71c780; }
+.learn h4 { color: #71c780 !important; }
+.learn p { background: #DDEFE1 !important;}
+
+.build { border-bottom: 5px solid #9f71c7; }
+.build h4 { color: #9f71c7 !important; }
+.build p { background: #E7DDEF !important;}
+
+.love {	border-bottom: 5px solid #6dc8f8; }
+.love h4 { color: #6dc8f8 !important; }
+.love p { background: #DDEFF9 !important;}
+
 .whatwedo {
-  background: #F8F8F8;
-  max-height: auto;
-  text-align: center;
-  padding: 5% 0;
-  cursor: pointer;
-  position: relative;
-  
+	background: #f9f9f9;
+	max-height: auto;
+	text-align: center;
+	padding: 5% 0;
+	cursor: pointer;
+	position: relative;
 }
+
 .whatwedo h4 {
-  padding-top: 15px;
+	padding-top: 15px;
+	color: rgba(0,0,0,0.3); !important;
+	font-size: 18px !important;
 }
+
 
 .whatwedo img {
 	-webkit-transition: all 0.2s ease-in-out;
@@ -583,7 +601,7 @@ nav {
 	overflow: hidden;
 	margin: 0;
 	padding: 0 0 0 0;
-	width: 100%;
+	max-width: 100%;
 	list-style: none;
 	text-align: center;
 }
@@ -594,12 +612,19 @@ nav {
 	z-index: 1;
 	display: inline-block;
 	overflow: hidden;
-	margin: -0.35em;
-	width: 100%;
-	height: 600px;
-	/*background: #1e1f20;*/
+	float: left;
+	width: 50%;
+	/*height: 50vh;*/
 	text-align: center;
 	cursor: pointer;
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	/* zoom */
+	-webkit-transition-property: background-size;
+	transition-property: background-size;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 
 .grid figure img {
@@ -607,12 +632,25 @@ nav {
 	display: block;
 	overflow: hidden;
 	width: 100%; /* if you wan to edit the size of each work */
-	/*height: auto;*/
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .grid figure < img:hover {
 	opacity: 1;
+}
+
+
+.grid figure .s-logo img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 40%;
+	max-width: 200px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .grid figure figcaption {
@@ -651,6 +689,8 @@ nav {
 .grid figure h2 {
 	/*word-spacing: -0.15em;*/
 	font-weight: 700;
+	padding: 1.2em;
+	line-height: 120%;
 }
 
 .grid figure h2 span {
@@ -675,7 +715,7 @@ figure.effect-hover figcaption::before {
 	height: 100%;
 	/*background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);*/
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.7);
 	content: '';
 	opacity: 0;
 	/*-webkit-transform: translate3d(0,50%,0);
@@ -732,6 +772,13 @@ figure.effect-hover:hover p {
 	/*-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);*/
 }
+
+/*  Zoom effect for work  */
+.client { padding-right: 2em;}
+
+/*  Zoom effect for work  */
+
+figure.effect-hover:hover > img { background-size: auto 130%; }
 
 /*  Shadow Effect  */
 
@@ -807,7 +854,8 @@ figure.effect-hover:hover p {
 /*  Content coming from right  */
 
 .content-right {
-	background: #F9F9F9;
+	background: #F9F9F9; /* Light */ 
+	/*background: #1F2223;*/ /* Dark */
 	padding: 75px;
 	position: fixed;
 	z-index: 999999;
@@ -827,9 +875,15 @@ figure.effect-hover:hover p {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-	
 }
 
+.content-right p {
+	color: #b2b1a8 !important;
+}
+
+.content-right strong {
+	color: #333 !important;
+}
 /*  Show Class  */
 
 .show{
@@ -994,15 +1048,16 @@ figure.effect-hover:hover p {
 	position: relative;
 	/*margin: 20px auto;*/
 	padding:1%;
+	max-width: 100%;
 }
 
 /* Social Icon */
 
-#about .fa {
+ .fa {
     display: inline-block;
     margin-right: 15px;
-    margin-top:30px;
-    margin-bottom: 2em;
+    /*margin-top:30px;
+    margin-bottom: 2em;*/
     font-size:16px;
     border: 1px solid #DDD;
     border-radius: 50%;
@@ -1021,11 +1076,11 @@ figure.effect-hover:hover p {
 	color:#FFF;
 }*/
 
-#about #fb:hover {background: #3b5998 !important; border-color: #3b5998 !important;	color:#FFF;}
-#about #tw:hover {background: #00aced !important; border-color: #00aced !important;	color:#FFF;}
-#about #in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
-#about #fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
-#about #dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
+#fb:hover {background: #3b5998 !important; border-color: #3b5998 !important;	color:#FFF;}
+#tw:hover {background: #00aced !important; border-color: #00aced !important;	color:#FFF;}
+#in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
+#fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
+#dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
 
 #about .lead {
 	font: 24px 'Georgia', sans-serif;
@@ -1043,6 +1098,10 @@ figure.effect-hover:hover p {
 	float: left;
 }
 
+#about span {
+	color: #333;
+	font-weight: 600;
+}
 /*	HINT- A CSS tooltip library */
 
 	.hint { position: relative; display: inline-block; }
@@ -1340,7 +1399,7 @@ figure.effect-hover:hover p {
 /* 12. FOOTER SETTINGS ================================================== */
 
 #footer {
-	padding:70px 0;
+	padding:20px 0;
 	background: #1e1f20;
 	font-size: 68.5%;
 	font-weight: 800;
@@ -1350,6 +1409,7 @@ figure.effect-hover:hover p {
 
 #footer p {
 	font-weight: 800;
+	padding-top: 10px;
 }
 
 #footer a {
@@ -1393,6 +1453,7 @@ figure.effect-hover:hover p {
 
 .logo-footer:hover {	
 	background: url("../img/logo_footer.png") #434547 -49px;
+
 }
 
             
@@ -1486,7 +1547,7 @@ and (orientation : landscape) {
 
 	section #crew {padding-left: 0; padding-right: 0;}
 	
-	.grid figure { height: 250px;}
+	.grid figure { height: 50vh;}
 	
 	.content-right { padding: 40px; }
 	
@@ -1573,12 +1634,15 @@ and (orientation : landscape) {
 
 	#header {
 		background-size: auto;
-	    height: 100%;
+	    /*height: 100%;*/
 	    position: relative;
 	}
 
 	#header h1 {
 		font-size: 34px;
+	}
+	#nav>li {
+    	float: left;
 	}
 
 /* Method */
@@ -1615,12 +1679,15 @@ and (orientation : landscape) {
 
 /* Works */
 
-	.grid figure {height: 250px;}
+	.grid figure {
+		max-height: 50vh; 
+		width: 100% !important;
+	}
 
 	.grid figure img {
 		position: relative;
 		display: block;
-		height: 100%;
+		max-height: 100%;
 		width: auto;
 		background-size: cover;
 		opacity: 0.7;

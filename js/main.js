@@ -292,22 +292,22 @@ $('.work6').on('click', function() {
 
 		// project is in view
 		
-		var project = $('.fade');
+		// var project = $('.fade');
 		
-		project.addClass('outOfView');
+		// project.addClass('outOfView');
 		
-		function projectInView() {
-			var windowTop = $(window).scrollTop();
-			var	windowBtm = windowTop + $(window).height();
-		    project.each(function(){
-		        projectTop = $(this).offset().top + $(this).height() / 5;
-		        projectBtm = $(this).offset().top + $(this).height() / 4;
-		        projectTop <= windowBtm && projectBtm >= windowTop ? $(this).removeClass('outOfView').addClass('inView') : $(this).removeClass('inView').addClass('outOfView')
-		    });
-		}
+		// function projectInView() {
+		// 	var windowTop = $(window).scrollTop();
+		// 	var	windowBtm = windowTop + $(window).height();
+		//     project.each(function(){
+		//         projectTop = $(this).offset().top + $(this).height() / 5;
+		//         projectBtm = $(this).offset().top + $(this).height() / 4;
+		//         projectTop <= windowBtm && projectBtm >= windowTop ? $(this).removeClass('outOfView').addClass('inView') : $(this).removeClass('inView').addClass('outOfView')
+		//     });
+		// }
 		
-		$(window).scroll(function(){ projectInView(); });
-		$(window).resize(function(){ projectInView(); });
+		// $(window).scroll(function(){ projectInView(); });
+		// $(window).resize(function(){ projectInView(); });
 
 /*-----------------------------------------------------------------------------------*/
 /*	07. FORM SENDER
