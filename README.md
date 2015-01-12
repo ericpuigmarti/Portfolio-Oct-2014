@@ -1,7 +1,9 @@
 
-# ericpuigmarti.com
-## Redesign for personal site
+## ericpuigmarti.com
 
-- Using Gumby.css Responsive Framework
+**Redesign for personal site**
+
+* Using Gumby.css Responsive Framework
+* Google fonts ""
 
 Enjoy!
