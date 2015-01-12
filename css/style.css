@@ -853,6 +853,14 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	
 }
 
+.content-left img {
+	margin-bottom: 2em;
+}
+.content-left h4 {
+	color: #999;
+	text-decoration: underline;
+}
+
 /*  Content coming from right  */
 
 .content-right {
