@@ -52,13 +52,10 @@
     src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.woff") format("woff");
 }
 
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-
+@import url(http://fonts.googleapis.com/css?family=ProximaNova:400,700);
 	
 /* 02. GENERALS SETTINGS ================================================== */
-
 
 /* Container  */
 
@@ -1305,13 +1302,17 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 #contact-links {
 	padding-left: 2em;
 	padding-right: 2em;
-	text-align: center;
 }
 
 .links {
 	padding-bottom: 2em;
+	text-align: center;
 }
 
+.links:hover {
+	background: green;
+	color: #f9f9f9 !important;
+}
 /* Form */
 
 #contact form input,
@@ -1418,8 +1419,9 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 }
 
 #footer p {
-	font-weight: 800;
+	/*font-weight: 800;*/
 	padding-top: 10px;
+	text-transform: none;
 }
 
 #footer a {
