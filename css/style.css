@@ -1310,7 +1310,6 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 }
 
 .links:hover {
-	background: green;
 	color: #f9f9f9 !important;
 }
 /* Form */
