@@ -14,13 +14,11 @@
   <meta name="keywords" content="Design, Designer, UI, User Interface, UX, User Experience, Product Design, Toronto, Startup" />
   <meta name="author" content="Eric Puigmarti">
   <meta name="description" content="I'm a Product Designer from Toronto. I’ve been successfully designing and collaborating on amazing projects for over 4 years with fantastic clients and companies. I love what I do, and I love working with clients to discover new solutions." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 
   <!-- Favicon /-->
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> <!-- Favicon /-->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
   <!-- Stylesheets /-->
   <link rel="stylesheet" href="css/gumby.css">   			<!-- Gumby Framework /-->
   <link rel="stylesheet" href="css/style.css">   			<!-- Main stylesheet /-->
@@ -51,12 +49,9 @@
 		 </ul>
 	</nav>
 </div> 
-
-
 <!-- /END NAVIGATION ############################################### -->
 
 <!-- HEADER ############################################### -->
-
 <section id="header" class="et-wrapper tinted-image">
 		<button class="et-rotate" et-in="scaleUpDown delay300" et-out="scaleDown"><img src="img/hamburger.png" alt="Display Mobile Menu"></button>
 		<div class="et-page"> <!-- For Mobile Menu transition -->
@@ -66,11 +61,10 @@
 	          	<div class="logo-phone centered" style=""><img alt="Eric Puigmarti Logo" src="img/logo-phone_ep.png"></div> 
 	          	<!-- This Logo is only displayed on Tablet/iPhone !-->  
 	  
-	          	<h1 class="row centered">Solving customer needs through digital experiences.</h1>
+	          	<h1 id="tagline" class="row centered">Solving customer needs through digital experiences.</h1>
 		    </div>
 		  
-		    <!-- Scroll down arrow --> 
-		  
+		    <!-- Scroll down arrow --> 		  
 		    <div class="go-down scrollme animateme">
 		 		<a href="#method" class="goto"><img src="img/go-down.png" alt="Go Down"></a>
 		   </div>
@@ -88,33 +82,29 @@
 				</ul>
 			</nav>	
 	   </div> <!-- End et-page transition -->
-
 </section>
-
 <!-- END HEADER ############################################### -->
 
 
 <!-- BEGIN CONTAINER ############################################### -->
-
 <div id="container" class="container">
 
 <!-- WHAT I DO SECTION ############################################### -->
-
 <section id="method">
 		
 	<!-- Hello title --> 
 	<div class="row">	
-	<h3 class="twelve columns centered">
-		I'm a Product Designer from Toronto. I’ve been successfully designing and collaborating on amazing projects for over 4 years with fantastic clients and companies. I love what I do, and I love working with clients to discover new solutions. I work at <a href="http://heistmade.com/">Heist Data+Design</a>.
-	</h3>
-	
-	<!-- Fancy quote -->
-	<!-- <p class="lead">“You must really understand the needs of your customers to design great products for them.” - Jason Mayes</p> -->
+		<h3 class="twelve columns centered">
+			I'm a Product Designer from Toronto. I’ve been successfully designing and collaborating on amazing projects for over 4 years with fantastic clients and companies. I love what I do, and I love working with clients to discover new solutions. I work at <a href="http://heistmade.com/">Heist Data+Design</a>.
+		</h3>
 	</div>
 
 	<!-- 3-up --> 
-	<div class="row scrollme">
+	<div class="space"></div>
+	<div class="line-dark"></div>
+	<div class="row"><h3 id="mantra">Design that matters.</h3></div>
 
+	<div class="row scrollme">
 		<div class="four columns whatwedo animateme learn" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="0">
 			<img src="img/icon/ico1.png" alt="ico1">
 			<h4>Learn</h4>
@@ -122,13 +112,13 @@
 		</div>
 		
 		<div class=" four columns whatwedo animateme build" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
-			<img src="img/icon/ico2.png" alt="ico2">
+			<img src="img/icon/ico2.png" alt="ico1">
 			<h4>Build</h4>
 			<p>Transfering our learnings and ideas into prototypes, help us test assumptions along the way.</p>
 		</div>
 		
 		<div class=" four columns whatwedo animateme love" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="200" data-rotatez="0">
-			<img src="img/icon/ico3.png" alt="ico3">
+			<img src="img/icon/ico3.png" alt="ico1">
 			<h4>Love</h4>
 			<p>Together we'll build products that not only you'll love, but ones your customers will love too.</p>
 		</div>
@@ -145,8 +135,6 @@
 
 			<div class="grid">
 
-				<!-- !!!! WORK-CONTENT ARE ON THE BOTTOM OF THIS HTML PAGE !!!!! -->	
-			
 				<!-- WORK 1 -->		
 				<figure class="work1 effect-hover fade">
 					<img src="img/telus_purple_beta_square.jpg" alt="Telus - My Account">
@@ -187,46 +175,69 @@
 			</div> <!-- End grid -->	
 
 </section>
-
 <!-- END PORTFOLIO SECTION ############################################### -->
 
 
 <!-- ABOUT SECTION ############################################### -->
-
 <section id="about">
 
 	<div class="row">
-				<div class="six columns">
-					<!-- Picture of you -->
-					<img class="picture " src="img/me.jpg" alt="Me">	
+		<div class="six columns">
+			<!-- Picture of you -->
+			<img class="picture " src="img/me.jpg" alt="Me">	
+		</div>
+		
+			<!-- Name --> 
+		<div class="six columns" id="bio">
+			<h4>About</h4>
+						
+			<!-- Content --> 
+			<p>Hello! I am a designer based in Toronto, Canada. I fell in love with design before I understood that design was a thing. As a kid, I loved playing with technology and admiring the graphic design of my favourite bands' album artwork. 
+			<br><br>
+			Today, I mainly focus on <span>Interface Design</span>, <span>Interaction Design</span>, and <span>User Experience Design</span>. I work on a team of super talented people at <a href="http://heistmade.com/" class="" target="_blank">Heist</a> to design beautiful experiences for digital products. I am not the type of person to stand still, I enjoy keeping myself busy while learning humbly.</p>
+			<br>
+			<h4>Other things I love:</h4>
+				<!-- Icon 1 -->
+				<div class="ilove">
+					<a class="hint hint--top" data-hint="Morning coffee"><img class="" src="img/icon/ico11.png"></a>
 				</div>
-				
-					<!-- Name --> 
-				<div class="six columns" id="bio">
-					<h4>About</h4>
-								
-					<!-- Content --> 
-					<p>Hello! I am a designer based in Toronto, Canada. I fell in love with design before I understood that design was a thing. As a kid, I loved playing with technology and admiring the graphic design of my favourite bands' album artwork. 
-					<br><br>
-					Today, I mainly focus on <span>Interface Design</span>, <span>Interaction Design</span>, and <span>User Experience Design</span>. I work on a team of super talented people at <a href="http://heistmade.com/" class="" target="_blank">Heist</a> to design beautiful experiences for digital products. I am not the type of person to stand still, I enjoy keeping myself busy while learning humbly.</p>
-					<br>
-					<h4>Other things I love:</h4>
-						<!-- Icon 1 -->
-						<div class="ilove">
-							<a class="hint hint--top" data-hint="Morning coffee"><img class="" src="img/icon/ico11.png"></a>
-						</div>
-						<!-- Icon 2 -->
-						<div class="ilove">
-							<a class="hint hint--top" data-hint="Crafting playlists"><img class="" src="img/icon/ico13.png"></a>
-						</div>
-						<!-- Icon 3 -->
-						<div class="ilove"><a class="hint hint--top" data-hint="Traveling"><img class="" src="img/icon/ico10.png"></a>
-						</div>
-						<!-- Icon 4 -->
-						<div class="ilove"><a class="hint hint--top" data-hint="Steak"><img class="" src="img/icon/ico12.png"></a>
-						</div>
-				</div><!-- End bio -->
-			</div> <!-- End row div -->    
+				<!-- Icon 2 -->
+				<div class="ilove">
+					<a class="hint hint--top" data-hint="Crafting playlists"><img class="" src="img/icon/ico13.png"></a>
+				</div>
+				<!-- Icon 3 -->
+				<div class="ilove"><a class="hint hint--top" data-hint="Traveling"><img class="" src="img/icon/ico10.png"></a>
+				</div>
+				<!-- Icon 4 -->
+				<div class="ilove"><a class="hint hint--top" data-hint="Steak"><img class="" src="img/icon/ico12.png"></a>
+				</div>
+		</div><!-- End bio -->
+	</div> <!-- End row div -->
+
+	<!-- 2 - up -->
+	<div id="facts" class="row">
+
+		<div id="read" class="six columns read">
+			<a href="http://ift.tt/1Hh40nZ" target="_blank">
+				<!-- <img src="img/ico3_dark.png"> -->
+				<h4>What I'm reading</h4>
+				<div class="line-light"></div>
+					<p>Do Less & Think More</p>
+			</a>
+		</div>
+
+		<div id="music" class="six columns read">
+			<a href="http://www.rdio.com/people/EricPuigmarti/" target="_blank">
+				<!-- <img src="img/icon/ico13_dark.png"> -->
+				<h4>What I'm listening to</h4>
+				<div class="line-light"></div>
+				<div class="box">
+				  	<p class="track"></p>
+				</div>
+			</a>
+		</div>
+	</div> <!-- /end 2 - up -->
+
 
 </section>
 <!-- END ABOUT SECTION ############################################### -->
@@ -244,32 +255,17 @@
 
 	<div class="row" id="contact-links ">
 		<!-- Left Side --> 
-		<div class="four columns links">
+		<div class="four columns links links-1">
 			<h4>Care to meet?</h4>
-			<p><a href="https://www.google.ca/maps/search/coffee+shop+in+Toronto/@43.674956,-79.4401908,13z" target="_blank">Find a coffee shop nearby</a></p>
+			<p><a href="https://www.google.ca/maps/search/coffee+shop+in+Toronto/@43.674956,-79.4401908,13z" target="_blank">Let's grab a coffee</a></p>
 		</div>
-		<div class="four columns links">
+		<div class="four columns links links-2">
 			<h4>Skype call</h4>
 			<p><a href="skype://ericpuigmarti92?userinfo">Reach me on Skype</a></p>
 		</div>
-		<div class="four columns links">
+		<div class="four columns links links-3">
 			<h4>By email</h4>
-			<p><a href="mailto:eric.puigmarti@gmail.com?subject=Hi Eric!">eric.puigmarti@gmail.com</a></p>			
-		</div>
-		
-		<!-- Right Side --> 
-		<div class="eight columns push_one" style="display:none;">
-		
-			<!-- CONTACT FORM -->
-		      <form name="htmlform" method="post" action="form_sender.php">            
-		    		<input type="text" name="name" placeholder="YOUR NAME" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="10" data-rotatez="0">
-		    		<input type="email" name="email" placeholder="YOUR EMAIL" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="300" data-rotatez="0">		    		
-		    		<textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE HERE :)" required class="animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="600" data-rotatez="0"></textarea>
-		    		<button name="send" type="submit" class="submit animateme"  data-from="1.1" data-to="0" data-opacity="0" data-translatex="1200" data-rotatez="0">Send</button>
-		    	
-		    		<!-- Text Promise we do not spam -->
-					<p class="spam"></p>	    
-		     </form>	
+			<p><a class="special" href="mailto:eric.puigmarti@gmail.com?subject=Hi Eric!">eric.puigmarti@gmail.com</a></p>			
 		</div>
 	
 	</div>
@@ -409,11 +405,11 @@
 		<div class="twelve columns centered">
 			<img src="img/venio-landing-page.png" alt="Venio Homepage">
 			<h4>Venio iOS app</h4>
-			<img src="img/venio_ios_multiple.jpg" alt="Venio Health iPhone app">
-			<img src="img/venio_ios.jpg" alt="Venio Health iPhone app">
+			<img src="img/venio_ios_multiple.jpg" class="lazy" alt="Venio Health iPhone app">
+			<img src="img/venio_ios.jpg" class="lazy" alt="Venio Health iPhone app">
 			<h4>Meal exploration app</h4>
-			<img src="img/venio_screen.jpg" alt="Venio Health Web app">	
-			<img src="img/coming-soon.jpg" alt="Case study coming soon">		
+			<img src="img/venio_screen.jpg" class="lazy" alt="Venio Health Web app">	
+			<img src="img/coming-soon.jpg" class="lazy" alt="Case study coming soon">		
 		</div>
 		
 	</div>
@@ -497,23 +493,36 @@
 
 <!-- END WORKS CONTENT ############################################### -->
 
-  <!-- Grab Google CDN's jQuery, fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-  
-  <script src="js/main.js" type="text/javascript"></script> 								<!-- Main Javascript File -->
-  <script src="js/plugins.js" type="text/javascript"></script> 								<!-- Plugins File for Contact Form -->
-  <script src="js/classie.js" type="text/javascript"></script> 								<!-- Navigation & Works Grid -->
-  <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script> 				<!-- Parallax -->
-  <script src="js/jquery.scrollto.js" type="text/javascript"></script> 						<!-- ScrollTo -->
-  <script src="js/waypoints.min.js" type="text/javascript"></script>						<!-- Waypoints -->
-  <script src="js/jquery.backgroundvideo.js" type="text/javascript"></script>				<!-- Video Background -->
-  <script src="js/mediaCheck.js" type="text/javascript"></script> 							<!-- MediaCheck -->	
-  <script src="js/yui.js" type="text/javascript"></script>									<!-- Yui Library -->	
-  <script src="js/jquery.instagram.js" type="text/javascript"></script>						<!-- Instagram Library -->
-  <script src="js/instagram.js" type="text/javascript"></script>							<!-- Instagram -->
-  <script src="js/jquery.scrollme.js" type="text/javascript"></script>						<!-- Scrollme Library -->
-  <script src="js/elementTransitions.min.js" type="text/javascript"></script>				<!-- ElementsTransitions used for Mobile Menu -->
+	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+	
+	<!-- Main Javascript File -->
+	<script src="js/main.js" type="text/javascript"></script> 								
+	<!-- Plugins File for Contact Form -->
+	<script src="js/plugins.js" type="text/javascript"></script> 
+	<!-- Navigation & Works Grid -->								
+	<script src="js/classie.js" type="text/javascript"></script> 								
+	<!-- Parallax -->
+	<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script> 				
+	<!-- ScrollTo -->
+	<script src="js/jquery.scrollto.js" type="text/javascript"></script> 						
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js" type="text/javascript"></script>						
+	<!-- Video Background -->
+	<script src="js/jquery.backgroundvideo.js" type="text/javascript"></script>				
+	<!-- MediaCheck -->	
+	<script src="js/mediaCheck.js" type="text/javascript"></script> 							
+	<!-- Yui Library -->	
+	<script src="js/yui.js" type="text/javascript"></script>									
+	<!-- Instagram Library -->						
+	<!-- <script src="js/jquery.instagram.js" type="text/javascript"></script> -->
+	<!-- Instagram -->
+	<script src="js/instagram.js" type="text/javascript"></script>							
+	<!-- Scrollme Library -->
+	<script src="js/jquery.scrollme.js" type="text/javascript"></script>						
+	<!-- ElementsTransitions used for Mobile Menu -->
+	<script src="js/elementTransitions.min.js" type="text/javascript"></script>				
 
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>

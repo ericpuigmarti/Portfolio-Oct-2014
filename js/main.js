@@ -12,6 +12,7 @@
 	10. Initialise Instagram
 	11. Videobackground ready
 	12. Reading list
+	13. Last played (LastFM)
 
 */
 
@@ -144,7 +145,6 @@ $(document).ready(function () { // Document ready
 	});
 
 
-
 /*-----------------------------------------------------------------------------------*/
 /*	04. MEMBERS HOVER EFFECT
 /*-----------------------------------------------------------------------------------*/
@@ -172,11 +172,9 @@ $(document).ready(function () { // Document ready
 		}});
 
 
-
 /*-----------------------------------------------------------------------------------*/
 /*	05. PORTFOLIO / WORKS SECTION
 /*-----------------------------------------------------------------------------------*/
-
 
 /* Open Action don't remove */
 
@@ -282,9 +280,6 @@ $('.work6').on('click', function() {
     });
 });
 
-
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	06. Fade In / Fade Out Class Elements ( used in Portfolio )
 /*-----------------------------------------------------------------------------------*/
@@ -292,28 +287,26 @@ $('.work6').on('click', function() {
 
 		// project is in view
 		
-		// var project = $('.fade');
+		var project = $('.fade');
 		
-		// project.addClass('outOfView');
+		project.addClass('outOfView');
 		
-		// function projectInView() {
-		// 	var windowTop = $(window).scrollTop();
-		// 	var	windowBtm = windowTop + $(window).height();
-		//     project.each(function(){
-		//         projectTop = $(this).offset().top + $(this).height() / 5;
-		//         projectBtm = $(this).offset().top + $(this).height() / 4;
-		//         projectTop <= windowBtm && projectBtm >= windowTop ? $(this).removeClass('outOfView').addClass('inView') : $(this).removeClass('inView').addClass('outOfView')
-		//     });
-		// }
+		function projectInView() {
+			var windowTop = $(window).scrollTop();
+			var	windowBtm = windowTop + $(window).height();
+		    project.each(function(){
+		        projectTop = $(this).offset().top + $(this).height() / 5;
+		        projectBtm = $(this).offset().top + $(this).height() / 4;
+		        projectTop <= windowBtm && projectBtm >= windowTop ? $(this).removeClass('outOfView').addClass('inView') : $(this).removeClass('inView').addClass('outOfView')
+		    });
+		}
 		
-		// $(window).scroll(function(){ projectInView(); });
-		// $(window).resize(function(){ projectInView(); });
+		$(window).scroll(function(){ projectInView(); });
+		$(window).resize(function(){ projectInView(); });
 
 /*-----------------------------------------------------------------------------------*/
 /*	07. FORM SENDER
 /*-----------------------------------------------------------------------------------*/
-
-
 
     /* Form Submission */
     $('form').submit(function () {
@@ -387,28 +380,28 @@ $('.goto').click(function(e){
 
 		/* SHOW ONLY 2 PICS ON MOBILE DEVICE */
 
-	    $("#instagram").instagram({
-	        clientId: 'f7e36e8b1b6a4c32a5371a2b015b87c5',
-	        show: '1',
-	        updateInterval: 960*60*2,
-	        //username: 'ericpuigmarti', /* DOESN'T WORK */
-	        hash: 'ui design', /* HERE IS THE HASHTAG USED */
-	        image_size: 'standard_resolution'
-	    })
+	    // $("#instagram").instagram({
+	    //     clientId: 'f7e36e8b1b6a4c32a5371a2b015b87c5',
+	    //     show: '1',
+	    //     updateInterval: 960*60*2,
+	    //     //username: 'ericpuigmarti', /* DOESN'T WORK */
+	    //     hash: 'ui design', /* HERE IS THE HASHTAG USED */
+	    //     image_size: 'standard_resolution'
+	    // })
 			
 
-        },
-        exit: function () {
+     //    },
+     //    exit: function () {
         
 
-	    $("#instagram").instagram({
-	        clientId: 'f7e36e8b1b6a4c32a5371a2b015b87c5',
-	        show: '12',
-	        updateInterval: 960*60*2,
-            // username: 'ericpuigmarti', /* DOESN'T WORK */
-	        hash: 'ui design', /* HERE IS THE HASHTAG USED */
-	        image_size: 'standard_resolution'
-	    })
+	    // $("#instagram").instagram({
+	    //     clientId: 'f7e36e8b1b6a4c32a5371a2b015b87c5',
+	    //     show: '12',
+	    //     updateInterval: 960*60*2,
+     //        // username: 'ericpuigmarti', /* DOESN'T WORK */
+	    //     hash: 'ui design', /* HERE IS THE HASHTAG USED */
+	    //     image_size: 'standard_resolution'
+	    // })
 			
 		
 
@@ -464,3 +457,52 @@ $(document).ready(function() {
 			});
 		});
 
+
+/*-----------------------------------------------------------------------------------*/
+            /*	13. LAST PLAYED (LastFM)
+/*-----------------------------------------------------------------------------------*/
+
+	//    If you use this, be sure to get your own API key!
+	// -> http://www.last.fm/api/account/create
+
+	$(document).ready(function() {
+	  var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=ericpuigmarti&api_key=b88a785049d6bd2a7c92fb9948c72b1b &format=json";
+	  $.getJSON(url, function(data) {
+	    var artist = data.recenttracks.track[0].artist["#text"];
+	    var song = data.recenttracks.track[0]["name"];
+	    var cover = data.recenttracks.track[0].image[3]["#text"];
+	    
+	    $('.track').html("\
+	      "+song+" by \
+	      "+artist+"\
+	    ");
+		//alert(data.recenttracks.track[1].artist["#text"]);
+	  });
+	});
+
+
+/*-----------------------------------------------------------------------------------*/
+            /*	13. LAZY LOAD IMAGES 
+/*-----------------------------------------------------------------------------------*/
+
+$(window).scroll(function(){
+var st = $(this).scrollTop(),
+    winH = $(this).height(),
+    /* you can set this add, 
+    depends on where you want the animation to start
+    for example if the section height is 100 and you set add of 50,
+    that means if 50% of the section is revealed 
+    on the bottom of viewport animate text
+    */
+    add = 150;
+
+$('.lazy').each(function(){
+    var pos = $(this).position().top;
+
+    if(st + winH >= pos + add){
+        $(this).stop().animate({opacity:1, marginTop:-20},'fast');
+    }else{
+        $(this).stop().animate({opacity:0, marginTop:0},'fast');
+    }
+});
+});

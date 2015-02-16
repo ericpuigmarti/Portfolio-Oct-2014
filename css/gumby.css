@@ -61,9 +61,9 @@ html, body { height: 100%; min-height: 100%;  }
 /*.container { padding: 0px $gutter-in-px;
 }*/
 .row { width: 100%; max-width: 1220px; min-width: 320px; margin: 0 auto;  }
-@media only screen and (max-width: 960px) { .row { padding: 0 20px; } }
+@media only screen and (max-width: 1220) { .row { padding: 0 20px; } }
 .row .row { min-width: 0px; }
-@media only screen and (max-width: 960px) { .row .row { padding: 0; } }
+@media only screen and (max-width: 1220px) { .row .row { padding: 0; } }
 
 /* To fix the grid into a different size, set max-width to your desired width */
 .column, .columns { margin-left: 2.12766%; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -71,6 +71,14 @@ html, body { height: 100%; min-height: 100%;  }
 .column:first-child, .columns:first-child, .alpha { margin-left: 0px; }
 
 .column.omega, .columns.omega { float: right; }
+
+/* Full width Classes */
+.one.full {width: 100%;}
+.two.full {width: 50%;}
+.three.full {width: 33.33%;}
+.four.full {width: 25%;}
+.five.full {width: 20%}
+.six.full {width: 16.666666667%;}
 
 /* Column Classes */
 .row .one.column { width: 6.38298%; }
