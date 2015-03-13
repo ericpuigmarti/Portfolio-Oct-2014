@@ -1412,7 +1412,11 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	text-align: center;
 }
 
+<<<<<<< HEAD
 /*.links:hover {
+=======
+.links:hover {
+>>>>>>> origin/gh-pages
 	color: #f9f9f9 !important;
 	background: #71c780;
 	-webkit-transition: background 0.3s ease-in-out;
