@@ -479,7 +479,7 @@ nav {
 	background: linear-gradient(215deg, rgba(137,231,255,0.5) 0%,rgba(236,135,192,0.5) 100%), url('../img/homepage.jpg') center center; /* Fall back */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 75vh;
+	min-height: 800px;
     position: relative;
 }
 
@@ -541,6 +541,63 @@ nav {
    background: none !important;
    display: none;
    opacity: 0;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #fafafa;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #fafafa;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
 }
 
 
@@ -1751,7 +1808,7 @@ and (orientation : landscape) {
 
 	#header {
 		background-size: auto;
-	    /*height: 100%;*/
+	    min-height: 500px;
 	    position: relative;
 	}
 
@@ -1879,6 +1936,11 @@ and (orientation : landscape) {
     	text-align: center;
 	}
 
+/* About */
+
+	#facts {
+		text-align: center;
+	}
 /* Instagram */
 
 	#instagram-feed h4 {
@@ -1939,4 +2001,3 @@ and (orientation : landscape) {
 	}
 
 }
-
