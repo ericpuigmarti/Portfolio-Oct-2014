@@ -113,15 +113,15 @@ b, strong {
 
 /* Make a divider line */
 .line-light {
-	width: 10%;
-	height: 3px;
+	width: 20%;
+	height: 2px;
 	background: #fff;
 	margin: 15px auto;
 }
 .line-dark {
 	width: 10%;
-	height: 3px;
-	background: #999999;
+	height: 2px;
+	background: #dddddd;
 	margin: 15px auto;
 }
 
@@ -1083,7 +1083,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
     /*display: none;*/
 }
 
-/* My lovely picture */
+/* Selfie time */
 #about .avatar {
 	width: 150px;
 	height: 150px;
@@ -1097,7 +1097,6 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 
  .picture {
 	width: auto;
-	/*height: 400px;*/
 	display: block;
 	position: relative;
 	/*margin: 20px auto;*/
@@ -1168,9 +1167,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	pointer-events: none;
 }
 		
-.hint:hover:before, .hint:hover:after {
-	opacity: 1;
-}
+.hint:hover:before, .hint:hover:after {opacity: 1;}
 
 .hint:before {
 	content: '';
@@ -1203,26 +1200,22 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	margin: 0 0 -6px -10px;
 }
 
-.hint--top:hover:before {
-	margin-bottom: -10px;
-}
+.hint--top:hover:before {margin-bottom: -10px;}
 
-.hint--top:hover:after {
-	margin-bottom: 2px;
-}
+.hint--top:hover:after { margin-bottom: 2px;}
 
 /* 8.1 Facts  ================================================== */
 
-#facts { padding-top: 80px; }
+#facts { padding-top: 2em;}
+
 #facts h4 {
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
-	font-size: 1.3em;
+	font-size: 12px;
 	z-index: 5;
-	position: relative;
-	letter-spacing: 4px;
-}
+	position: relative;}
+
 #facts img {
 	max-width: 100%;
 	position: relative;
@@ -1232,48 +1225,53 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	opacity: 0.6;
-}
-#facts p {color: #fff; text-align: center;}
-#facts a:hover {color: #000 !important; border-bottom: 2px solid #000;}
+	opacity: 0.6;}
 
-#read {
-	background: #74c682;
-	background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('../img/reading.jpg') center no-repeat;
-	background-size: cover;
-	-webkit-transition: all 0.6s ease;
-	   -moz-transition: all 0.6s ease;
-	    -ms-transition: all 0.6s ease;
-	     -o-transition: all 0.6s ease;
-	        transition: all 0.6s ease;
+#facts p {/*color: #fff;*/color: #3d3d3d; font-size:2em;text-align: center;}
+#facts p:hover a {
+	color: #999; 
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	   -moz-transition: -webkit-transform 0.35s, color 0.35s;
+	                transition: transform 0.35s, color 0.35s;}
+
+#read:hover, #music:hover {
+	/*border: 2px rgba(0,0,0,0.2) solid;*/
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;}
+
+/* Outline Outward */
+.outline-outward {
+	display: inline-block;
+	position: relative;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+.outline-outward:before {
+	content: '';
+	position: absolute;
+	border: rgba(0,0,0,0) solid 4px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition-duration: 0.3s;
+	transition-property: top right bottom left;
+}
+.outline-outward:hover:before {
+	top: -8px;
+	right: -8px;
+	bottom: -8px;
+	left: -8px;
+	border: rgba(0,0,0,0.1) solid 4px;
 }
 
-#read:hover {   
-}
+#read, #music {padding: 5% 0; max-height: 300px; border: 2px rgba(0,0,0,0.0) solid;}
+#read h4, #music h4 {padding-top: 30px; margin-bottom: -20px;}
+#read h4 {color: #74c682;}
+#music h4 {color: #9e73c5;}
+#track  {float: left;}
 
-#music {
-	background: #9e73c5;
-	background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url('../img/music.jpg');
-	background-size: cover;
-	background-position: center bottom;
-	-webkit-transition: all 0.6s ease; /* Safari and Chrome */
-       -moz-transition: all 0.6s ease; /* Firefox */
-        -ms-transition: all 0.6s ease; /* IE 9 */
-         -o-transition: all 0.6s ease; /* Opera */
-            transition: all 0.6s ease; 
-}
-
-#read, #music {padding: 5% 0; max-height: 500px;}
-#read h4, #music h4 {padding-top: 30px;}
-
-#music { 
-	color: #ffffff;
-	text-align: center;
-}
-
-#track  { 
-	float: left;
-}
 /* 09. READING FEED ================================================== */
 
 #reading-feed {
