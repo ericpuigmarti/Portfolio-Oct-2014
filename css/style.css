@@ -1076,6 +1076,8 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 
 #about {
 	background: #f9f9f9;
+	background: #eceff1 url("../img/desk_bg.jpg") center center no-repeat;
+	background-size: cover;
     /*background: #FFFFFF;*/
     position: relative;
     margin-top:0px;
@@ -1104,35 +1106,6 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	max-width: 100%;
 }
 
-/* Social Icon */
- .fa {
-    display: inline-block;
-    margin-right: 15px;
-    /*margin-top:30px;
-    margin-bottom: 2em;*/
-    font-size:16px;
-    /*border: 1px solid #DDD;*/
-    border-radius: 50%;
-    padding:10px;
-    width: 40px;
-    -webkit-transition: all 0.2s ease-in-out;
-       -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-         -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-}
-
-/*#about .fa:hover {
-	background: #64b7e3;
-	border-color: #64b7e3;
-	color:#FFF;
-}*/
-
-#fb:hover {background: #3b5998 !important; border-color: #3b5998 !important;	color:#FFF;}
-#tw:hover {background: #00aced !important; border-color: #00aced !important;	color:#FFF;}
-#in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
-#fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
-#dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
 
 #about .lead {
 	font: 24px "Volkhov", Georgia, Times, "Times New Roman", serif;
@@ -1283,7 +1256,6 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
     padding-top: 100px;
     padding-bottom: 80px;
 }
-
 
 /* Article title */
 #reading-feed .meta a{
@@ -1551,6 +1523,30 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 #footer a:hover {
 	color: #64b7e3;
 }
+
+/* Social Icon */
+ .fa {
+    display: inline-block;
+    margin-right: 15px;
+    /*margin-top:30px;
+    margin-bottom: 2em;*/
+    font-size:16px;
+    /*border: 1px solid #DDD;*/
+    border-radius: 50%;
+    padding:10px;
+    width: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+
+#fb:hover {background: #3b5998 !important; border-color: #3b5998 !important;	color:#FFF;}
+#tw:hover {background: #00aced !important; border-color: #00aced !important;	color:#FFF;}
+#in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
+#fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
+#dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
 
 .logo-footer {
 	background: url("../img/logo_footer.png") #434547;
