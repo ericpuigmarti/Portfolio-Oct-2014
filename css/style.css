@@ -216,6 +216,9 @@ a:hover {
     line-height: 30px;
     font-size: 18px;
 }*/
+h3 a {
+	border-bottom: 1px solid #5ac6ff;
+}
 
 p {
 	margin: 0 0 1em 0;
@@ -227,6 +230,7 @@ p {
 }
 p a {
     color:#333;
+    border-bottom: 1px solid #5ac6ff;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
