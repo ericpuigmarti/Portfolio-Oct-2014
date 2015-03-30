@@ -201,7 +201,8 @@ a {
 }
 
 a:hover {
-    color: #64b7e3;
+    /*color: #64b7e3;*/
+    color: #888888;
 }  
 
 .dark {
@@ -1261,7 +1262,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
     margin-right: auto;
 	opacity: 0.6;}
 
-#facts p {/*color: #fff;*/color: #3d3d3d; font-size:2em;text-align: center;}
+#facts p {/*color: #fff;*/color: #3d3d3d; font-size:1.8em;text-align: center;}
 #facts p:hover a {
 	color: #999; 
 	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
