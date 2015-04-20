@@ -277,6 +277,7 @@ p .bold:hover{
 	margin: 25px 0;
 	display: inline-block;
 	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .border-button:hover {
