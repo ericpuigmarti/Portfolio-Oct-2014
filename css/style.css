@@ -695,9 +695,9 @@ nav {
 	-webkit-transition: -webkit-transform 0.3s, color 0.3s;
 	   -moz-transition: -webkit-transform 0.3s, color 0.3s;
 	transition: transform 0.3s, color 0.5s;
-	-webkit-transform: translate3d(0,-90%,0);
-	   -moz-transform: translate3d(0,-90%,0);
-	        transform: translate3d(0,-90%,0);
+	-webkit-transform: translate3d(0,-95%,0);
+	   -moz-transform: translate3d(0,-95%,0);
+	        transform: translate3d(0,-95%,0);
 	opacity: 1;
 }
 
@@ -976,13 +976,22 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 }
 
 .content-left img {
-	margin-bottom: 2em;
+	padding-bottom: 2em;
 }
 
 .content-left h4 {
 	color: #999;
-	text-decoration: underline;
+	font-size: 1.4em;
+	padding: 2em;
 }
+
+.full-width {
+	width: 100%;
+	padding: 4em;
+}
+.telus { background: #f5f6f7;}
+.telus-purple {	color: #8c68a6 !important;}
+.shifthub-blue { color: #4B90CD !important;}
 
 /*  Content coming from right  */
 .content-right {
@@ -1010,7 +1019,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 }
 
 .content-right p {
-	color: #b2b1a8 !important;
+	/*color: #b2b1a8 !important;*/
 }
 
 .content-right strong {
@@ -1138,10 +1147,9 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 /* 09. ABOUT SETTINGS ================================================== */
 
 #about {
-	background: #f9f9f9;
-	background: #eceff1 url("../img/desk_bg.jpg") center center no-repeat;
+	background: #eceff1;
+	/*background: #eceff1 url("../img/desk_bg.jpg") center center no-repeat;*/
 	background-size: cover;
-    /*background: #FFFFFF;*/
     position: relative;
     margin-top:0px;
     padding: 80px 0;
