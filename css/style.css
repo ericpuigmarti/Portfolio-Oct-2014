@@ -124,6 +124,40 @@ b, strong {
 	background: #dddddd;
 	margin: 15px auto;
 }
+.line-green {
+	width: 10em;
+	height: 1px;
+	margin: 15px auto;
+	background: -webkit-linear-gradient(left, #74c682 0%, #74c682 50%, rgba(0,0,0,0.1) 50%);
+	background: -moz-linear-gradient(left, #74c682 0%, #74c682 50%, rgba(0,0,0,0.1) 50%);
+	background: -o-linear-gradient(left, #74c682 0%, #74c682 50%, rgba(0,0,0,0.1) 50%);
+	background: linear-gradient(to right, #74c682 0%, #74c682 50%, rgba(0,0,0,0.1) 50%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+#read:hover > .line-green {
+	background-position: 0 0;
+	height: 6px;
+}
+.line-purple {
+	width: 10em;
+	height: 1px;
+	margin: 15px auto;
+	background: -webkit-linear-gradient(left, #9e73c5 0%, #9e73c5 50%, rgba(0,0,0,0.1) 50%);
+	background: -moz-linear-gradient(left, #9e73c5 0%, #9e73c5 50%, rgba(0,0,0,0.1) 50%);
+	background: -o-linear-gradient(left, #9e73c5 0%, #9e73c5 50%, rgba(0,0,0,0.1) 50%);
+	background: linear-gradient(to right, #9e73c5 0%, #9e73c5 50%, rgba(0,0,0,0.1) 50%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+#music:hover > .line-purple {
+	background-position: 0 0;
+	height: 6px;
+}
 
 /* Make a diagonal divider line */
 /*#contact:after {
@@ -992,6 +1026,8 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 .telus { background: #f5f6f7;}
 .telus-purple {	color: #8c68a6 !important;}
 .shifthub-blue { color: #4B90CD !important;}
+.venio-green { color: #94C159 !important;}
+.koge-red { color: #E57262 !important;}
 
 /*  Content coming from right  */
 .content-right {
@@ -1289,12 +1325,12 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	position: relative;
 	-webkit-tap-highlight-color: transparent;
 	transform: translateZ(0);
-	box-shadow: 0 0 1px transparent;
+	/*box-shadow: 0 0 1px transparent;*/
 }
 .outline-outward:before {
 	content: '';
 	position: absolute;
-	border: rgba(0,0,0,0) solid 4px;
+	/*border: rgba(0,0,0,0) solid 4px;*/
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1307,7 +1343,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	right: -8px;
 	bottom: -8px;
 	left: -8px;
-	border: rgba(0,0,0,0.1) solid 4px;
+	/*border: rgba(0,0,0,0.1) solid 4px;*/
 }
 
 #read, #music {padding: 5% 0; max-height: 300px; border: 2px rgba(0,0,0,0.0) solid;}
