@@ -139,7 +139,7 @@ b, strong {
 }
 #read:hover > .line-green {
 	background-position: 0 0;
-	height: 6px;
+	height: 2px;
 }
 .line-purple {
 	width: 10em;
@@ -156,7 +156,7 @@ b, strong {
 }
 #music:hover > .line-purple {
 	background-position: 0 0;
-	height: 6px;
+	height: 2px;
 }
 
 /* Make a diagonal divider line */
