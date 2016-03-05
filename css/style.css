@@ -264,16 +264,22 @@ p {
 	font-weight: normal;
 }
 p a {
-    color:#333;
-    border-bottom: 1px solid #5ac6ff;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    color:#616161;
+    border-bottom: 1px solid #64b7e3;
+    -webkit-transition: all 0.3s cubic-bezier(.33,.66,.66,1);
+    -moz-transition: all 0.3s cubic-bezier(.33,.66,.66,1);
+    -o-transition: all 0.3s cubic-bezier(.33,.66,.66,1);
+    transition: all 0.3s cubic-bezier(.33,.66,.66,1);
+
+    box-shadow: inset 0 -2px 0 #64b7e3;
+    color: inherit;
+    /*transition: background .15s cubic-bezier(.33,.66,.66,1);*/
+    text-decoration: none;
 }
 
 p a:hover {
-    color: #64b7e3;
+    color: #333333;
+    /*background: #64b7e3;*/
 }
 
 p .bold {
@@ -381,6 +387,8 @@ nav #logo a{
     z-index: 99999;
     font-family: 'Montserrat', sans-serif;
     color:#FFF;
+    /*background-image: linear-gradient(transparent 10px, #64b7e3 10px);*/
+    background-image: linear-gradient(transparent 10px, pink 10px);
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 5px;
@@ -715,8 +723,8 @@ nav {
 	opacity: 0;
 	position: absolute;
 	padding: 5%;
-	text-align: justify;
-	color: #999999;
+	text-align: center;
+	color: #3e3e3e;
 	background: #F8F8F8;
 	transition: all 0.3s cubic-bezier(.87,-.41,.19,1.44) 0s;
 	-webkit-transform: translate3d(0,-30%,0);
@@ -726,8 +734,8 @@ nav {
 }
 	
 .whatwedo:hover > p {
-	-webkit-transition: -webkit-transform 0.3s, color 0.3s;
-	   -moz-transition: -webkit-transform 0.3s, color 0.3s;
+	-webkit-transition: -webkit-transform 1s, color 0.3s;
+	   -moz-transition: -webkit-transform 1s, color 0.3s;
 	transition: transform 0.3s, color 0.5s;
 	-webkit-transform: translate3d(0,-95%,0);
 	   -moz-transform: translate3d(0,-95%,0);
@@ -1028,6 +1036,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 .shifthub-blue { color: #4B90CD !important;}
 .venio-green { color: #94C159 !important;}
 .koge-red { color: #E57262 !important;}
+.bitmaker-blue { color: #007aff !important;}
 
 /*  Content coming from right  */
 .content-right {
@@ -1183,13 +1192,13 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 /* 09. ABOUT SETTINGS ================================================== */
 
 #about {
-	background: #eceff1;
-	/*background: #eceff1 url("../img/desk_bg.jpg") center center no-repeat;*/
-	background-size: cover;
-    position: relative;
-    margin-top:0px;
-    padding: 80px 0;
-    /*display: none;*/
+	/*background: #eceff1;*/
+	background: #eceff1 url("../img/img-1.svg") center center;
+  background-size: 300px 300px;
+  position: relative;
+  margin-top:0px;
+  padding: 80px 0;
+  /*display: none;*/
 }
 
 /* Selfie time */
@@ -1205,14 +1214,23 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 }
 
  .picture {
-	width: auto;
+  height: 500px;
 	display: block;
 	position: relative;
-	/*margin: 20px auto;*/
 	padding:1%;
+  margin-bottom: 2em;
 	max-width: 100%;
+  background: #ddd url("../img/eric.jpg");
+  background-size: cover;
+  -webkit-transition: 0.33s ease-in-out;
+     -moz-transition: 0.33s ease-in-out;
 }
-
+  .picture:hover {
+  background: url("../img/dog.jpg");
+  max-width: 100%;
+/*  -webkit-transition: 0.33s ease-in-out;
+     -moz-transition: 0.33s ease-in-out;*/
+}
 
 #about .lead {
 	font: 24px "Volkhov", Georgia, Times, "Times New Roman", serif;
@@ -1234,6 +1252,23 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 	color: #333;
 	font-weight: 600;
 }
+
+/*.pattern {
+  background-image: url("..img/pattern-1.svg");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200%;
+  height: 200%;
+  min-height: 520px;
+  background-size: 300px 300px;
+  z-index: 1;
+  transition: opacity 0.25s linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0.25;
+  animation: animated_background 150s linear infinite;
+}*/
 
 /*	HINT- A CSS tooltip library */
 
