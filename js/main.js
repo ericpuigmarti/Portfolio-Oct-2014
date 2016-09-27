@@ -13,6 +13,7 @@
 	11. Videobackground ready
 	12. Reading list
 	13. Last played (LastFM)
+	14. LAZY LOAD IMAGES 
 
 */
 
@@ -280,6 +281,22 @@ $('.work6').on('click', function() {
     });
 });
 
+/* WORK 7 */
+
+$('.work7').on('click', function() {
+    $('.work7-container').fadeIn( 800,  function() { 
+    	openAction();     
+    });
+});
+
+/* WORK 8 */
+
+$('.work8').on('click', function() {
+    $('.work8-container').fadeIn( 800,  function() { 
+    	openAction();     
+    });
+});
+
 /*-----------------------------------------------------------------------------------*/
 /*	06. Fade In / Fade Out Class Elements ( used in Portfolio )
 /*-----------------------------------------------------------------------------------*/
@@ -433,29 +450,29 @@ $('.goto').click(function(e){
             code source: http://www.alatechsource.org/blog/2012/05/using-the-google-spreadsheets-data-api-to-build-a-recommended-reading-list-code-words.h
 /*-----------------------------------------------------------------------------------*/
 
-$(document).ready(function() {	
-		//source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE	
-		$(function listArticles() {	
-		$.getJSON( "https://spreadsheets.google.com/feeds/list/1ogwuw8oFsujXiwyKS6Z2xipTCD97mzmroKYf5CUfbjc/od6/public/values?alt=json-in-script&callback=?&",
-			function (data) {	
-				$('div#feed').append('<ul class="items"></ul>');
-				$.each(data.feed.entry, function(i,entry) {	
-					var item = '<span style="display:none">' + entry.id.$t + '</span>';	
-					// URL image source append # to base url below
-					// item += '<img src="http://covers.openlibrary.org/b/isbn/' + entry.gsx$isbn.$t + '-S.jpg"/>';
-					// URL link to source
-					item += '<span class="meta"><h2><a href="http://www.worldcat.org/isbn/' + entry.gsx$isbn.$t + '">' + entry.title.$t + '</a></h2>';	
-					// Author name
-					item += '<br/>Author: ' + entry.gsx$author.$t;	
-					// Description from column
-					// if (entry.gsx$notes.$t) {	
-					// 	item += '<br/>Description: ' + entry.gsx$notes.$t;	
-					// }	
-					$('.items').append('<li>' + item + '</span></li>');	
-					});
-				});
-			});
-		});
+// $(document).ready(function() {	
+// 		//source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE	
+// 		$(function listArticles() {	
+// 		$.getJSON( "https://spreadsheets.google.com/feeds/list/1ogwuw8oFsujXiwyKS6Z2xipTCD97mzmroKYf5CUfbjc/od6/public/values?alt=json-in-script&callback=?&",
+// 			function (data) {	
+// 				$('div#feed').append('<ul class="items"></ul>');
+// 				$.each(data.feed.entry, function(i,entry) {	
+// 					var item = '<span style="display:none">' + entry.id.$t + '</span>';	
+// 					// URL image source append # to base url below
+// 					// item += '<img src="http://covers.openlibrary.org/b/isbn/' + entry.gsx$isbn.$t + '-S.jpg"/>';
+// 					// URL link to source
+// 					item += '<span class="meta"><h2><a href="http://www.worldcat.org/isbn/' + entry.gsx$isbn.$t + '">' + entry.title.$t + '</a></h2>';	
+// 					// Author name
+// 					item += '<br/>Author: ' + entry.gsx$author.$t;	
+// 					// Description from column
+// 					// if (entry.gsx$notes.$t) {	
+// 					// 	item += '<br/>Description: ' + entry.gsx$notes.$t;	
+// 					// }	
+// 					$('.items').append('<li>' + item + '</span></li>');	
+// 					});
+// 				});
+// 			});
+// 		});
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -482,7 +499,7 @@ $(document).ready(function() {
 
 
 /*-----------------------------------------------------------------------------------*/
-            /*	13. LAZY LOAD IMAGES 
+            /*	14. LAZY LOAD IMAGES 
 /*-----------------------------------------------------------------------------------*/
 
 $(window).scroll(function(){
