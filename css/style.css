@@ -2512,7 +2512,7 @@ blockquote {
 }
 
 #header {
-  min-height: 4em !important;
+  /*min-height: 4em !important;*/
 }
 
 .hide-m {
