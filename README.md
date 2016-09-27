@@ -1,8 +1,7 @@
 **Redesign for personal site**
 
 * Using Gumby.css Responsive Framework
-* Google fonts "Source Sans Pro" & "Montserrat"
+* Google fonts "Sofia-Pro" & "Volkhov"
 * Social icons via FontAwesome
-* General icons via Icons8 App
 
 Enjoy!
