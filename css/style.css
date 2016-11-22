@@ -1893,10 +1893,7 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
  .fa {
     display: inline-block;
     margin-right: 15px;
-    /*margin-top:30px;
-    margin-bottom: 2em;*/
-    font-size:16px;
-    /*border: 1px solid #DDD;*/
+    font-size:16px !important;
     border-radius: 50%;
     padding:10px;
     width: 40px;
@@ -1912,6 +1909,8 @@ figure.effect-hover:hover > img { background-size: auto 130%; }
 #in:hover {background: #517fa4 !important; border-color: #517fa4 !important;	color:#FFF;}
 #fl:hover {background: #ff0084 !important; border-color: #ff0084 !important;	color:#FFF;}
 #dr:hover {background: #ea4c89 !important; border-color: #ea4c89 !important;	color:#FFF;}
+#md:hover {background: #02B875 !important; border-color: #02B875 !important;  color:#FFF;}
+
 
 .logo-footer {
 	background: url("../img/logo_footer.png") #434547;
@@ -2156,9 +2155,8 @@ blockquote {
     font-weight: 200;
 }
 
+
 /* 14. MEDIA QUERIES  ============================================ */
-
-
 
 /* Media Queries for iPad in Portrait */
 

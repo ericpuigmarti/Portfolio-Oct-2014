@@ -21,12 +21,13 @@
   <link rel="stylesheet" href="css/gumby.css">   			<!-- Gumby Framework /-->
   <link rel="stylesheet" href="css/style.css">   			<!-- Main stylesheet /-->
   <link rel="stylesheet" href="css/elementTransitions.css"> <!-- Elements Transitions used for mobile menu /-->
-  <link rel="stylesheet" href="css/font-awesome.css">   	<!-- Font Awesome /-->
+  <!-- <link rel="stylesheet" href="css/font-awesome.css">  -->  	<!-- Font Awesome /-->
   <link rel="stylesheet" href="css/animate.css">			<!-- Animate CSS /-->
   <!-- Scripts  -->
   <script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
   <script src="https://use.typekit.net/hiu3fui.js"></script> <!-- Typekit /-->
   <script>try{Typekit.load({ async: true });}catch(e){}</script> <!-- Typekit /-->
+  <script src="https://use.fontawesome.com/9f92ef2ac7.js"></script> <!-- Font Awesome /-->
 </head>
 <body>
 
@@ -153,15 +154,15 @@
 			A lot of our research and industry data indicates and supports the fact that cash is not the future. Small businesses in particular who are prepared and able to accept Online Payments and credit cards are the ones that are best positioned to flourish. As newer, growing forms of payment become more popular, they will eventually supplant cash as the go-to payment methods in all situations. Our single biggest opportunity was to focus on businesses who mostly get paid by check. Given the growing adoption of Online Payments in our space, and the <a href="http://www.businessinsider.com/the-death-of-the-paper-check-2013-3" target="_blank">death of the paper check</a>, we see a few major opportunities to improve our customers' lives. 
 			</p>
 			
-			<blockquote style="margin: 1em;">How might we help businesses who are not yet comfortable using Online Payments, to discover the benefit and help them begin accepting Online Payments so that they can get paid easier?</blockquote>
+			<blockquote style="margin: 1em;">How might we help businesses, who are not yet comfortable using Online Payments, discover the benefit and help them to begin accepting Online Payments so that they can get paid easier?</blockquote>
 
 			<p>
-			For those customers already using Online Payments, with other payment services like Stripe or PayPal, we have also decided to take another approach. For these customers our focus is more around how might we bring that existing payment experience inside the FreshBooks ecosystem to add even greater value for them in FreshBooks? And finally for for their clients, we decided to focus on how might we make Online Payments ridiculously easy that makes it's easier to use than writing a check? 
+			For those customers already using Online Payments, with other payment services like Stripe or PayPal, we have also decided to take another approach. For these customers our focus is more around how might we bring that existing payment experience inside the FreshBooks ecosystem to add even greater value for them in FreshBooks? And finally in order for businesses to get paid faster, we knew that we needed to build a ridiculously payment experience that makes Online Payments easier to use than writing a check? 
 			</p>
 
 			<p>
-			Building native payment capability within FreshBooks has significantly reduced the time it takes for businesses to get paid for their work. When paid by credit card, <strong>75% of invoices are paid within 10 days</strong>. It takes about 40 days for the same percentage of invoices to be paid via cash and checks.
-			Beyond online credit card payments, FreshBooks is constantly researching and investigating new payments methods and improving these experiences to ensure that customers of small businesses have the best payments tools available to them.
+			Since building native payment capability, FreshBooks has significantly reduced the time it takes for businesses to get paid for their work. When paid by credit card, <strong>75% of invoices are paid within the first 10 days</strong> compared to an average of 40 days for invoices that are paid via cash and checks.
+			Beyond online credit card payments, FreshBooks is constantly researching and investigating better payments experiences and improving them to ensure that customers of small businesses have the best payments tools available to them.
 			</p>
 
 
@@ -183,7 +184,7 @@
         </div>
 
 		<!-- Screenshot-1 -->
-		<div class="row">
+		<div class="row animated" id="element-to-animate">
 			<div class="six columns top-pad">
 				<h3 class="feature">Say Goodbye To Chasing Checks</h3>
 				<p>Small businesses who use Online Payments get paid on average 5 days faster. Put an end to payment delays and make it easier for your clients to pay you by giving online payment options.</p>
@@ -220,7 +221,7 @@
 			</div>
 			<div class="six columns top-pad">
 				<h3 class="feature">Make it easier for your clients to pay</h3>
-				<p>Clients can pay you right from your invoice—even on their mobile devices. Once a payment is made, the invoice is automatically updated and clients can save a copy of the invoice for thier own records.</p>		
+				<p>Clients can pay you right from your invoice—even on their mobile devices. Once a payment is made, the invoice is automatically updated and clients can save a copy of the invoice for their own records.</p>		
 			</div>
 		</div>
 		<div class="twelve columns top-pad centered">
@@ -267,9 +268,10 @@
 <section id="footer">
 		    <div class="row">	
 		    	<div class="eight columns push_five centered">
-			    	<a href="https://www.facebook.com/eric.puigmarti"><i class="fa fa-facebook" id="fb"></i></a>
-			    	<a href="https://twitter.com/ericpuigmarti"><i class="fa fa-twitter" id="tw"></i></a>
-			    	<a href="https://dribbble.com/ericpuigmarti"><i class="fa fa-dribbble" id="dr"></i></a>
+			    	<a href="https://www.facebook.com/eric.puigmarti" target="_blank"><i class="fa fa-facebook" id="fb"></i></a>
+			    	<a href="https://twitter.com/ericpuigmarti" target="_blank"><i class="fa fa-twitter" id="tw"></i></a>
+			    	<a href="https://dribbble.com/ericpuigmarti" target="_blank"><i class="fa fa-dribbble" id="dr"></i></a>
+			    	<a href="https://medium.com/@ericpuigmarti" target="_blank"><i class="fa fa-medium" id="md"></i></a>
 			    </div>
 
 		    	<div class="three columns centered"><p>© 2016 Eric Puigmarti</p></div>
@@ -311,7 +313,9 @@
 	<!-- Scrollme Library -->
 	<script src="./js/jquery.scrollme.js" type="text/javascript"></script>						
 	<!-- ElementsTransitions used for Mobile Menu -->
-	<script src="./js/elementTransitions.min.js" type="text/javascript"></script>				
+	<script src="./js/elementTransitions.min.js" type="text/javascript"></script>
+	<!-- Waypoints Animate -->
+	<script src="./js/noframework.waypoints.min.js" type="text/javascript"></script>
 
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
