@@ -2228,7 +2228,6 @@ and (orientation : portrait) {
 		display: none;
 	}
 
-
  }
 
 /* Media Queries for iPad in Landscape */
@@ -2492,6 +2491,7 @@ and (orientation : landscape) {
 /* About */
 	#bio {padding: 1.3em;}
 	#music {margin-top: 1.2em;}
+  .shots {display: none !important}
 
 /* Case studies */
 

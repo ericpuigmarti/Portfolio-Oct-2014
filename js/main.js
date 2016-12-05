@@ -538,7 +538,7 @@ $(document).ready(function(){
       $('#element-to-animate').addClass('fadeInLeft');
   }, { offset: '50%' });
  
-}
+});
 
 
 
